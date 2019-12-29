@@ -1,7 +1,6 @@
-#-- Scheduled activity for Kiosk: weather, roads and Slide Show
-#  Updated on Dec 16, 2019 by Eugene Taylashev
-30 06	* * *	root	/etc/kiosk/dispatch.sh weather
-40 07	* * 1-5	root	/etc/kiosk/dispatch.sh bus
-05 08	* * 1-5	root	/etc/kiosk/dispatch.sh roads
-00 09	* * *	root	/etc/kiosk/dispatch.sh photos
-00 23	* * *	root	/etc/kiosk/dispatch.sh stop
+#-- Sample scheduled activity for the Kiosk: news, dashboard, blank screen
+05 09	* * 1-5	root	/etc/kiosk/dispatch.sh news
+30 09	* * *	root	/etc/kiosk/dispatch.sh board
+00 19	* * *	root	/etc/kiosk/dispatch.sh stop
+
+#-- Sample scheduled activity for Kiosk: news, dashboard, blank screen
