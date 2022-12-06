@@ -21,7 +21,8 @@ Files for the kiosk:
 To install a kiosk perform the following steps:
 1. Install a typical [Raspbian desktop](https://www.raspberrypi.org/downloads/raspbian/)
 2. Using the Raspberry Configuration tool change default password, enable SSH and VNC as well as select Auto-logon to desktop
-3. As the root add the following modifications to the file `/etc/xdg/lxsession/LXDE-pi/autostart`: 
+3. if needed, specify the autologin user in the file `/etc/lightdm/lightdm.conf`, section `[Seat:*]`: `autologin-user=eugene`
+4. As the root add the following modifications to the file `/etc/xdg/lxsession/LXDE-pi/autostart`: 
 `sudo nano /etc/xdg/lxsession/LXDE-pi/autostart`
 ```
 #-- disable screensaver
